@@ -1,8 +1,0 @@
-<resources>
-    <string translatable="false" name="app_name">android sdk</string>
-
-    <string name="pointcheckout_close">Close</string>
-    <string name="pointcheckout_error">Error</string>
-    <string name="pointcheckout_checking_device">Checking your device. Please wait...</string>
-    <string name="pointcheckout_not_secure">PointCheckout payment can not run on this device due to security reasons.</string>
-</resources>

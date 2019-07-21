@@ -1,6 +1,0 @@
-<resources>
-    <string name="pointcheckout_close">اغلاق</string>
-    <string name="pointcheckout_error">خطأ</string>
-    <string name="pointcheckout_checking_device">جاري التحقق من الجهاز، الرجاء الانتظار...</string>
-    <string name="pointcheckout_not_secure">لا يمكن تشغيل طريقة الدفع PointCheckout على جهازك لانه ليس امنا</string>
-</resources>
