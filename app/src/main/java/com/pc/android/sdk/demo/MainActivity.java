@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         try {
-            pcClient = new PointCheckoutClient(true);
+            pcClient = new PointCheckoutClient(Environment.TEST);
             pcClient.initialize(this);
 
         } catch (PointCheckoutException e) {
@@ -77,15 +77,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         try {
-            pcClient.pay(this, txtCheckoutKey.getText().toString(), "test://test/redirect", new PointCheckoutEventListener() {
+            pcClient.pay(this, txtCheckoutKey.getText().toString(), new PointCheckoutEventListener() {
                 @Override
-                public void onPaymentCancel() {
-                    System.out.println("!!PAYMENT CANCELLED");
+                public void onUpdate() {
+                    System.out.println("!!PAYMENT UPDATED");
                 }
 
                 @Override
-                public void onPaymentUpdate() {
-                    System.out.println("!!PAYMENT UPDATED");
+                public void onDismiss() {
+                    System.out.println("!!PAYMENT DISMISS");
                 }
             });
 
